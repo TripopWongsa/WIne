@@ -1,0 +1,22 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items :center;
+    background: #641019;
+    overflow: hidden;
+     }
+
+.img-bot{
+    text-align: end;
+    padding-top: 9em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.button-predict {
+  font-weight: 600;
+  }

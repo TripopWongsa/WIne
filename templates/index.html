@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wine</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/wine.css">
+
+</head>
+<body>
+    <div class="row">
+
+        <!-- pic wine  text-center -->
+        <div class="text-center"><img src="/static/img/wine.png" width="250" height="250"></div>
+
+        <!-- Form รับข้อมูล -->
+        <form action="/predict" method="post">
+            <!-- row and col -->
+            <div class="row">
+                <!-- Alcohol -->
+                <div class="col-3 text-center"><img src="/static/img/alcohol.png" width="100" height="100"></div>
+                <div class="col-9 align-self-center"><input type="text" class="form-control" name ="Alcohol" placeholder="Alcohol โดยค่าเฉลี่ยอยู่ที่ 13%"></div>
+                <!-- Malic -->
+                <div class="col-3 text-center"><img src="/static/img/malic.png" width="200" height="100"></div>
+                <div class="col-9 align-self-center"><input type="text" class="form-control" name ="Malic_Acid" placeholder="Malic_Acid โดยค่าเฉลี่ยอยู่ที่ 3.4%"></div>
+                <!-- buttom -->
+                <div class="col-12 text-center"><button type="submit" class="btn btn-outline-warning btn-lg button-predict col-4" value="predict">Predict</button></div>
+            </div>
+        </form>
+
+        <div class="img-bot">
+            <img src="/static/img/img2.png" width="300" height="300">
+        </div>
+
+    </div>
+
+</body>
+</html>
